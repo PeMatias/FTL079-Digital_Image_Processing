@@ -21,24 +21,22 @@ for lay = L:-1:1 % varredura por camada (página) da maior potencia a menor
     for col = 1:N % varredura horizonalmente - colunas
         for row = 1:1:M %varredra verical - linhas
             ImgRes(row,col,lay) = I(row,col)/2; % Reduz a intensidade na metade
-            filename = 'drip-bottle-'+2^lay
-            imwrite(ImgRes(:,:,lay),filename,'tif'); % gerando imag
         end
     end 
     I = ImgRes(:,:,lay); % Atualiza a para o nivel mais baixo 2^()
 end
 
-figure;
-subplot(2,2,1);imshow(Img_256,[]);title('256 niveis');
-subplot(2,2,2);imshow(ImgRes(:,:,7),[]);title('128 niveis');
-subplot(2,2,3);imshow(ImgRes(:,:,6),[]);title('64 níveis');
-subplot(2,2,4);imshow(ImgRes(:,:,5),[]);title('32 níveis');
+figure;imshow(Img_256,[]);title('256 niveis');
+for lay  = L:-1:1
+     %figure;imshow(ImgRes(:,:,lay),[]);title(string(2^lay)+' níveis');
+     filename = ['drip
+     imwrite(ImgRes(:,:,lay),'drip-bottle-'+sring(2^lay)+'.tif','tif','Compression','none','Resolution',783);
+end
 
-figure;
-subplot(2,2,1);imshow(ImgRes(:,:,4),[]);title('16 níveis');
-subplot(2,2,2);imshow(ImgRes(:,:,3),[]);title('8 níveis');
-subplot(2,2,3);imshow(ImgRes(:,:,2),[]);title('4 níveis');
-subplot(2,2,4);imshow(ImgRes(:,:,1),[]);title('2 níveis');
+
+
+
+
 
 
 

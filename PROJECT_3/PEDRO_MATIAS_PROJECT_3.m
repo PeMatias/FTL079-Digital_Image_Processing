@@ -26,30 +26,18 @@ for lay = L:-1:1 % varredura por camada (página) da maior potencia a menor
     I = ImgRes(:,:,lay); % Atualiza a para o nivel mais baixo 2^()
 end
 
-figure;
-subplot(2,2,1);imshow(Img_256,[]);title('256 niveis');
+figure;imshow(Img_256,[]);title('256 niveis');
+for lay  = L:-1:1
+     figure;imshow(ImgRes(:,:,lay),[]);title(string(2^lay)+' níveis');
+     % Arquivos numerados exponecialmente
+     filename = ['drip-boottle-',num2str(2^lay),'.tif'];
+     % Escrevendo as imagens
+     imwrite(ImgRes(:,:,lay),filename,'tif','Compression','none','Resolution',783);
+end
 
-subplot(2,2,2);imshow(ImgRes(:,:,7),[]);title('128 niveis');
-imwrite(ImgRes(:,:,7),'drip-bottle-128.tif'); % gerando imagens tif
 
-subplot(2,2,3);imshow(ImgRes(:,:,6),[]);title('64 níveis');
-imwrite(ImgRes(:,:,6),'drip-bottle-64.tif'); % gerando imagens tif
 
-subplot(2,2,4);imshow(ImgRes(:,:,5),[]);title('32 níveis');
-imwrite(ImgRes(:,:,5),'drip-bottle-32.tif'); % gerando imagens tif
 
-figure;
-subplot(2,2,1);imshow(ImgRes(:,:,4),[]);title('16 níveis');
-imwrite(ImgRes(:,:,4),'drip-bottle-16.tif'); % gerando imagens tif
-
-subplot(2,2,2);imshow(ImgRes(:,:,3),[]);title('8 níveis');
-imwrite(ImgRes(:,:,3),'drip-bottle-8.tif'); % gerando imagens tif
-
-subplot(2,2,3);imshow(ImgRes(:,:,2),[]);title('4 níveis');
-imwrite(ImgRes(:,:,2),'drip-bottle-4.tif'); % gerando imagens tif
-
-subplot(2,2,4);imshow(ImgRes(:,:,1),[]);title('2 níveis');
-imwrite(ImgRes(:,:,1),'drip-bottle-2.tif'); % gerando imagens tif
 
 
 
