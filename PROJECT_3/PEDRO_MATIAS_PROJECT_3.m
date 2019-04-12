@@ -28,11 +28,16 @@ end
 
 figure;imshow(Img_256,[]);title('256 niveis');
 for lay  = L:-1:1
+    
      figure;imshow(ImgRes(:,:,lay),[]);title(string(2^lay)+' níveis');
+     
      % Arquivos numerados exponecialmente
-     filename = ['drip-bottle-',num2str(2^lay),'.tif'];
+     %filename1 = ['images_tif/drip-bottle-',num2str(2^lay),'.tif']; %.tif 
+     %filename2 = ['images_png/drip-bottle-',num2str(2^lay),'.png']; %.png
+     
      % Escrevendo as imagens
-     imwrite(ImgRes(:,:,lay),filename,'tif','Compression','none','Resolution',783);
+     %imwrite(ImgRes(:,:,lay),filename1,'tif','Compression','none','Resolution',783);
+     %imwrite(ImgRes(:,:,lay),filename2);
 end
 
 
