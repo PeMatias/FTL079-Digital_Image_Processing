@@ -1,4 +1,4 @@
-close all,clear all,clc, format compact;
+close all,clear all,clc;
 
 % Reduza o número de intensidades da imagem drip-bottle-256.tif de 256 para
 % 2 em potências inteiras de 2, enquanto deixa a resolução da imagem em um
@@ -26,24 +26,17 @@ for lay = L:-1:1 % varredura por camada (página) da maior potencia a menor
     I = ImgRes(:,:,lay); % Atualiza a para o nivel mais baixo 2^()
 end
 
-figure;imshow(Img_256,[]);title('256 niveis');
-for lay  = L:-1:1
-    
-     figure;imshow(ImgRes(:,:,lay),[]);title(string(2^lay)+' níveis');
-     
-     % Arquivos numerados exponecialmente
-     %filename1 = ['images_tif/drip-bottle-',num2str(2^lay),'.tif']; %.tif 
-     %filename2 = ['images_png/drip-bottle-',num2str(2^lay),'.png']; %.png
+figure('Name','256 niveis');imshow(Img_256,[],'Border','tight');
+for lay = L:-1:1
+     % Arquivos ordenados exponecialmente
+     filename1 = ['images_tif/drip-bottle-',num2str(2^lay),'.tif']; %.tif 
      
      % Escrevendo as imagens
-     %imwrite(ImgRes(:,:,lay),filename1,'tif','Compression','none','Resolution',783);
-     %imwrite(ImgRes(:,:,lay),filename2);
+     imwrite(ImgRes(:,:,lay),filename1,'tif','Compression','none','Resolution',783);
+     titulo = string(2^lay)+' níveis';
+     figure('Name',titulo);
+     imshow(ImgRes(:,:,lay),[],'Border','tight');
 end
-
-
-
-
-
 
 
 
