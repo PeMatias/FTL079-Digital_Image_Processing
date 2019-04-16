@@ -1,6 +1,6 @@
 # FTL079-Digital_Image_Processing
-Projetos desenvolvidos em MATLAB para a disciplina de Processamento Digital de Imagens, ministrada pela Professora Marly Fernandes Costa. Os projetos tem objetivo de fixar os conceitos, fundamentos e campo de aplicação da área de processamento digital de imagens, além de possuir implementações das principais técnicas de processamento digital de imagens tais como ferramentas de filtragem, de análise, de segmentação e de realce de imagens em escala de cinza e de imagens true color, nos domínios espaciais e da frequência. 
 
+Projetos desenvolvidos em MATLAB para a disciplina de Processamento Digital de Imagens da UFAM, ministrada pela Professora Drª Marly Fernandes Costa. Os projetos tem objetivo de fixar os conceitos, fundamentos e campo de aplicação da área de processamento digital de imagens, além de possuir implementações das principais técnicas de processamento digital de imagens tais como ferramentas de filtragem, de análise, de segmentação e de realce de imagens em escala de cinza e de imagens true color, nos domínios espaciais e da frequência. 
 ## Getting Started
 
 Cada projeto está principalmente relacionado com alguns conceitos apresentados no livro Digital Image Processing de Rafael C. Gonzales e Richard E. Woods e na sala de aula.
