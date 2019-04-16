@@ -15,8 +15,9 @@ Para testar os scripts e funções, a máquina deve possuir o sofwtare de desenv
 ### Project#1
 
 Objetivo familiarizar com o MATLAB. Em particular, é feito:leitura, exibição e gravação (armazenamento) de imagens. No script é feito os seguinte passos:
-[X].Obtenção do tamanho (M,N) de uma imagem fornecida; obtenção do valor médio das intensidades do nível de cinza;
-2. obtenha o valor do número de bits utilizado para armazenar cada pixel;
-3. A taxa de compressão se a mesma estiver comprimida;
-Mostre a imagem em uma janela e salve essa janela
-Salve a imagem como outro nome e em outro formato, por exemplo, tif.
+
+[X] Obtenção do tamanho (M,N) de uma imagem fornecida;
+[X] obtenção do valor médio das intensidades do nível de cinza;
+[X] Obtenção do valor do número de bits utilizado para armazenar cada pixel;
+[X] Obtenção da taxa de compressão se a mesma estiver comprimida;
+[X] Apresentação da imagem em uma janela;
