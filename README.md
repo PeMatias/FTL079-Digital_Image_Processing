@@ -105,10 +105,10 @@ Para cada tópico havia sido acordado implementar os operadores, foram publicado
 
 - [ ] A transformada hit or miss
 - [ ] Preenchimento de buracos
-**- [x] Extração de components conexos**
-- [ ] Afinamento →
+- [x] **Extração de components conexos**
+- [ ] Afinamento 
 - [ ] Esqueletos
-- [ ] Poda →
+- [ ] Poda 
 - [x] **Reconstrução geodésica:**
    - [x] **Dilatação geodésica**
    - [x] **Erosão geodésica**
@@ -120,7 +120,7 @@ Para cada tópico havia sido acordado implementar os operadores, foram publicado
 
 #### Seminário 2: 
 Os tópicos do seminário foram: *Morfologia matemática em escala de cinza*
-- [ ] Erosão e dilatação -> Abertura e fechamento
+- [ ] Erosão e dilatação → Abertura e fechamento
 - [ ] Algoritmos morfológicos básicos
 - [x] **Reconstrução morfológica em níveis de cinza:
    - [x] **Reconstrução morfológica por dilatação**
