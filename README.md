@@ -122,7 +122,7 @@ Para cada tópico havia sido acordado implementar os operadores, foram publicado
 Os tópicos do seminário foram: *Morfologia matemática em escala de cinza*
 - [ ] Erosão e dilatação → Abertura e fechamento
 - [ ] Algoritmos morfológicos básicos
-- [x] **Reconstrução morfológica em níveis de cinza:
+- [x] **Reconstrução morfológica em níveis de cinza:**
    - [x] **Reconstrução morfológica por dilatação**
    - [x] **Reconstrução morfológica por erosão**
    - [x] **Abertura por reconstrução**
