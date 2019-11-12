@@ -90,3 +90,41 @@ Objetivo: Converter entre espaços de cores RGH e HSI
 
 ### Project#13
 Objetivo: Nesse projeto é feito uma filtragem no domínio da frequência para realçar os detalhes finos, como as bordas dos ossos. Dois processos são implementados em MATLAB, o primeiro com um filtro gaussiano e o segundo com um filtro passa-alta de enfase.
+
+### Seminários
+
+A equipe dos seminários foi formada pelos alunos:
+- Dimerson Lucas Oliveira Coelho
+- Pedro Henrique Dos Santos Iunes
+- Jerônimo Ximenes do Prado Neto
+- Pedro Victor Dos Santos Matias (me)
+
+#### Seminário 1 
+Os tópicos do seminário foram: *Processamento morfológico em imagens binárias*
+Para cada tópico havia sido acordado implementar os operadores, foram publicados todos, contudo **somente os tópicos marcados tiveram suas implementações que foram testadas e validadas.**
+
+[ ]. A transformada hit or miss
+[ ]. Preenchimento de buracos
+**[X]. Extração de components conexos (apresentado e códigos desenvolvidos por mim)**
+[ ]. Afinamento →
+[ ]. Esqueletos
+[ ]. Poda →
+**[X]. Reconstrução geodésica (apresentado e códigos desenvolvidos por mim):
+   [X] Dilatação geodésica
+   [X] Erosão geodésica**
+
+
+
+
+
+
+#### Seminário 2: 
+Os tópicos do seminário foram: *Morfologia matemática em escala de cinza*
+[ ] Erosão e dilatação -> Abertura e fechamento
+[ ]. Algoritmos morfológicos básicos
+**[X]. Reconstrução morfológica em níveis de cinza (apresentado e códigos desenvolvidos por mim):
+  [X] Reconstrução morfológica por dilatação
+  [X] Reconstrução morfológica por erosão
+  [X] Abertura por reconstrução
+  [X] Fechamento por reconstrução**
+
