@@ -101,17 +101,17 @@ A equipe dos seminários foi formada pelos alunos:
 
 #### Seminário 1 
 Os tópicos do seminário foram: *Processamento morfológico em imagens binárias*
-Para cada tópico havia sido acordado implementar os operadores, foram publicados todos, contudo **somente os tópicos marcados tiveram suas implementações que foram testadas e validadas.**
+Para cada tópico havia sido acordado implementar os operadores, foram publicados todos, contudo **somente os tópicos marcados tiveram suas implementações desenvolvidos e testados por mim.**
 
-[ ]. A transformada hit or miss
-[ ]. Preenchimento de buracos
-**[X]. Extração de components conexos (apresentado e códigos desenvolvidos por mim)**
-[ ]. Afinamento →
-[ ]. Esqueletos
-[ ]. Poda →
-**[X]. Reconstrução geodésica (apresentado e códigos desenvolvidos por mim):
-   [X] Dilatação geodésica
-   [X] Erosão geodésica**
+- [ ] A transformada hit or miss
+- [ ] Preenchimento de buracos
+**- [x] Extração de components conexos**
+- [ ] Afinamento →
+- [ ] Esqueletos
+- [ ] Poda →
+- [x] **Reconstrução geodésica:**
+   - [x] **Dilatação geodésica**
+   - [x] **Erosão geodésica**
 
 
 
@@ -120,11 +120,11 @@ Para cada tópico havia sido acordado implementar os operadores, foram publicado
 
 #### Seminário 2: 
 Os tópicos do seminário foram: *Morfologia matemática em escala de cinza*
-[ ] Erosão e dilatação -> Abertura e fechamento
-[ ]. Algoritmos morfológicos básicos
-**[X]. Reconstrução morfológica em níveis de cinza (apresentado e códigos desenvolvidos por mim):
-  [X] Reconstrução morfológica por dilatação
-  [X] Reconstrução morfológica por erosão
-  [X] Abertura por reconstrução
-  [X] Fechamento por reconstrução**
+- [ ] Erosão e dilatação -> Abertura e fechamento
+- [ ] Algoritmos morfológicos básicos
+- [x] **Reconstrução morfológica em níveis de cinza:
+   - [x] **Reconstrução morfológica por dilatação**
+   - [x] **Reconstrução morfológica por erosão**
+   - [x] **Abertura por reconstrução**
+   - [x] **Fechamento por reconstrução**
 
