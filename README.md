@@ -43,20 +43,50 @@ Foi usado o imshow() com [] para ajustar a faixa dinâmica da imagem
 
 ### Project#4
 
-Objetivo: 
+Objetivo: Escrever uma função *g=imagescaling(f,cx,cy)*, onde f é uma imagem em escala de cinza e cx e cy são fatores de escala positivos ao longo das direções x (vertical) e y (horizontal), respectivamente. 
+Foi feito um script-função para fazer o escalonamento (resize) de imagens. Como teste, foi redimensionado a imagem girl.tif para metade.
 
 ### Project#5
 
-Objetivo: 
+Objetivo: Gerar o histograma de uma imagem em escala de cinza de 256 níveis.
+A função, *imageHist4e(f,mode)*, recebe dois parâmetros que é a matriz da imagem, f, e o modo do histograma, se é normalizado ou não-normalizado.
 
 ### Project#6
 
-Objetivo: 
+Objetivo: Implementar uma função, *histEqual4e(f)*, de equalização de imagens, com intuito de melhorar o contraste da imagem com uma melhor distribuição dos pixels.
+Analisando os resultados dos testes concluímos que os resultados foram satisfatórios, como equalização é apenas uma ferramenta para aumento do contraste nenhuma intensidade foi criada no processo, também os histogramas obtidos não perfeitamente uniformes. Contudo o resultado permitiu notar significativos detalhes, demonstrando que essa técnica é útil para o realce do contraste
 
 ### Project#7
 
-Objetivo: 
+Objetivo: Escrever uma função *g=imagePad4e(f,r,c,padtype)*, para preenchimento de imagem, f, com r linhas acima e abaixo da imagem e c colunas à esquerda e à direita. Se padtype = 'zeros', ou for omitido do argumento, a função implementa zero padding. Se padtype = 'replicar', ela replica o preenchimento.
 
 ### Project#8
 
-Objetivo: 
+Objetivo: Desenvolver uma função *g=twodSFilter(f,w)*, para executar a filtragem espacial 2-D de imagens, f e kernel, w. Essa função usa preenchimento de replicação por padrão. Também , por padrão, re-escala a entrada no intervalo [0,1].
+A implementação foi testada com um filtro passa-baixo (filtro espacial médio) para reduzir as intensas variações de intensidade com w = 3X3, 11x11 e 21x21, aplicando-se na imagem testpattern1024.tif.
+
+### Project#9
+
+Objetivo: Ler uma imagem (polymercell.tiff) e implementar qualquer um dos métodos de segmentação aprendidos em sala para extrair os limites das maiores “bolhas” da imagem.
+Foi escolhido desenvolver o operador de Prewitt, as bordas das duas maiores bolhas foram extraídas satisfatoriamente mas a o método poderia ter sido outro como o operador Sobel que aplica uma suavização inicial.
+
+### Project#10
+
+Objetivo: Realizar os procedimentos abaixo:
+1. Escrever uma função *g = globalThresh(f, detT)* que implementa a segmentação via limiar global apresentada na turma. A imagem de entrada deve ser dimensionado automatica- mente para o intervalo [0,1]. Use ∆T = 0, 01 como padrão para este parâmetro. 
+2. Ler a imagem rice-shaded.tif e limiarize-a usando globalThresh com seu configurações padrão. Explique as razões de quaisquer erros. 
+3. Expicar se existem outros valores de ∆T além do padrão que foi usado em (2) que poderia potencialmente melhorar o resultado de (2).
+
+Analisando os resultados pelas imagens de teste e respondendo quesito 3 sobre o valor de ∆T concluo que não há necessidade de outros valores se o valor for um pouco maior o ruı́do detectado é maior, contudo se diminuirmos o valor alguns objetos começaram a não ser detectado. Se o valor se aproxima de zero o tempo de convergência é muito longo, uma forma para melhorar a extração dos objetos seria usar uma outra técnica de estimação do limiar inicial e de atualização do limiar que é via média dos grupos com intensidade 0 ou 1.
+
+### Project#11
+Objetivo: Escrever uma função *g=colorSpaceConv(f, 'método')* que converte a imagem colorida f no modelo designado pelo método, que é uma sequência com os valores possíveis: 'rgb2cmy', 'cmy2rgb', 'rgb2cmyk' e cmyk2rgb;
+Após os testes e analisando os resultados pelas imagens a principal diferença é apresentada nas funções com o método 'cmy2rgb' e 'cmyk2rgb'. A imagem aplicada são bem semelhantes, o retorno delas é bem visível a diferença no centro do girassol, na CMYK os detalhes pretos são mais visíveis enquanto que na CMY são um pouco azulados. 
+
+### Project#12
+Objetivo: Converter entre espaços de cores RGH e HSI
+1. Escrever uma função *rgb2hsi* para converter imagens RGB em HSI 
+2. Escrever uma função *hsi2rgb* para converter imagens HSI em RGB
+
+### Project#13
+Objetivo: Nesse projeto é feito uma filtragem no domínio da frequência para realçar os detalhes finos, como as bordas dos ossos. Dois processos são implementados em MATLAB, o primeiro com um filtro gaussiano e o segundo com um filtro passa-alta de enfase.
